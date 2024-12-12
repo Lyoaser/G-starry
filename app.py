@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 from sparkai.llm.llm import ChatSparkLLM, ChunkPrintHandler
 from sparkai.core.messages import ChatMessage
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # 配置参数
 SPARKAI_URL = 'wss://spark-api.xf-yun.com/v1.1/chat'
