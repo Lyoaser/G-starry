@@ -1,0 +1,5 @@
+flask==2.0.1
+spark_ai_python
+flask-cors
+werkzeug==2.0.3
+requests
